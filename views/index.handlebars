@@ -1,0 +1,27 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Cormen Book
+            </h1>
+            <p class="lead">Take this Book</p>
+            <form action="/charge" method="POST">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="{{stripePublishableKey}}" data-amount="500" data-name="Algo book"
+                    data-description="book for Algo by cormen"
+                    data-image="https://stripe.com/img/v3/newsroom/social.png" data-locale="auto">
+
+                    </script>
+                <script>
+                    // Hide default stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                </script>
+                <button type="submit" class="btn btn-outline-dark text-white btn-lg">Pay by Card</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41VndKVtiXL._SX258_BO1,204,203,200_.jpg"
+                class="img-fluid rounded" alt="image of bbok">
+        </div>
+    </div>
+</section>

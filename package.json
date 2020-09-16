@@ -1,0 +1,11 @@
+{
+  "name": "book-seller",
+  "version": "1.0.0",
+  "description": "app to sell books",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Abhishek Sharma",
+  "license": "ISC"
+}
